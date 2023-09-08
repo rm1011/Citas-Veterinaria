@@ -12,9 +12,6 @@ const ListaPacientes = () => {
         <div className="md:h-screen overflow-y-scroll">
           <Paciente />
           <Paciente />
-          <Paciente />
-          <Paciente />
-          <Paciente />
         </div>
       </div>
     </>
