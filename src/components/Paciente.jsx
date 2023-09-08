@@ -1,31 +1,34 @@
-const Paciente = () => {
+// import { PropTypes } from "prop-types";
+
+const Paciente = ({ paciente }) => {
+  const { nombre, propietario, email, fecha, sintomas } = paciente;
   return (
     <div className="mx-5 mb-3 px-5 py-10 rounded-lg bg-white shadow-md">
       <p className="font-bold mb-3 text-gray-700 uppercase">
-        Nombre: {""} <span className="font-normal normal-case">Scrapy</span>
+        Nombre: {""} <span className="font-normal normal-case">{nombre}</span>
       </p>
       <p className="font-bold mb-3 text-gray-700 uppercase">
         Propietario: {""}
-        <span className="font-normal normal-case">Luis</span>
+        <span className="font-normal normal-case">{propietario}</span>
       </p>
       <p className="font-bold mb-3 text-gray-700 uppercase">
         Email: {""}
-        <span className="font-normal normal-case">correo@gmail.com</span>
+        <span className="font-normal normal-case">{email}</span>
       </p>
       <p className="font-bold mb-3 text-gray-700 uppercase">
         Fecha de Alta: {""}
-        <span className="font-normal normal-case">10/05/2023</span>
+        <span className="font-normal normal-case">{fecha}</span>
       </p>
       <p className="font-bold mb-3 text-gray-700 uppercase">
         Sintomas: {""}
-        <span className="font-normal normal-case">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora illum
-          similique non cumque deleniti? Perferendis, dolor ea debitis error et
-          nostrum reiciendis aperiam facere mollitia odio eum ipsum quod rerum!
-        </span>
+        <span className="font-normal normal-case">{sintomas}</span>
       </p>
     </div>
   );
 };
+
+// Paciente.propTypes = {
+//   paciente: PropTypes.object,
+// };
 
 export default Paciente;

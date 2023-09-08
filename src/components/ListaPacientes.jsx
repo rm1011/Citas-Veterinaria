@@ -1,6 +1,7 @@
+// import { PropTypes } from "prop-types";
 import Paciente from "./Paciente";
 
-const ListaPacientes = () => {
+const ListaPacientes = ({ pacientes }) => {
   return (
     <>
       <div className="md:w-1/2 lg:w-3/5">
@@ -10,12 +11,17 @@ const ListaPacientes = () => {
           <span className="text-indigo-600 font-bold">Pacientes y Citas</span>
         </p>
         <div className="md:h-screen overflow-y-scroll">
-          <Paciente />
-          <Paciente />
+          {pacientes.map((paciente) => (
+            <Paciente paciente={paciente} />
+          ))}
         </div>
       </div>
     </>
   );
 };
+
+// ListaPacientes.propTypes = {
+//   pacientes: PropTypes.object,
+// };
 
 export default ListaPacientes;

@@ -1,4 +1,5 @@
-import { useState, useEffect } from "react";
+// import { PropTypes } from "prop-types";
+import { useState } from "react";
 import Error from "./Error";
 
 const Formulario = ({ pacientes, setPacientes }) => {
@@ -146,5 +147,10 @@ const Formulario = ({ pacientes, setPacientes }) => {
     </>
   );
 };
+
+// Formulario.propTypes = {
+//   setPacientes: PropTypes.func,
+//   pacientes: PropTypes.array,
+// };
 
 export default Formulario;
