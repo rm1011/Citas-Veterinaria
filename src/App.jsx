@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <div className="container mx-auto mt-20 ">
+      <div className="container mx-auto py-20 bg-gray-100">
         <Header />
         <div className="md:flex mt-12">
           <Formulario pacientes={pacientes} setPacientes={setPacientes} />
